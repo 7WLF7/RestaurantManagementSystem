@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\models\\produs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\produs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\controllers\\produscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\produscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "backend.http",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.http",
+              "RelativeDocumentMoniker": "backend\\backend.http",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.http",
+              "RelativeToolTip": "backend\\backend.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-13T12:25:14.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProdusController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ProdusController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
+              "RelativeToolTip": "backend\\Controllers\\ProdusController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADgvxYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:59:52.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:52:57.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Produs.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Produs.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Produs.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Produs.cs",
+              "RelativeToolTip": "backend\\Models\\Produs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:51:04.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:46:23.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
