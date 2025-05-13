@@ -10,13 +10,13 @@ const Navbar = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Home Link */}
-          <div className="text-lg font-semibold text-black hover:text-purple-800">
-            <Link to="/home">Home</Link>
+          <div className="text-lg font-semibold text-black hover:text-orange-500">
+            <Link to="/menuPage">Meniu</Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/login" className="text-black hover:text-purple-500">
+            <Link to="/login" className="text-black hover:text-orange-500">
               Login
             </Link>
             <Link to="/register" className="text-black hover:text-orange-500">
