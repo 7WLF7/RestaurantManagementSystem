@@ -8,5 +8,6 @@ namespace backend.Data
         public ApplicationDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions) { }
 
         public DbSet<Produs> Produse { get; set; }
+        public DbSet<Categorie> Categorii { get; set; }
     }
 }
