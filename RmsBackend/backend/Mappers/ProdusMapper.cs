@@ -9,8 +9,8 @@ namespace backend.Mappers
         {
             return new ProdusDto
             {
-                Name = produsModel.Nume,
-                Description = produsModel.Descriere,
+                Nume = produsModel.Nume,
+                Descriere = produsModel.Descriere,
             };
         }
         public static Produs ToProdusFromCreateDto(this CreateProdusRequestDto produsDto)

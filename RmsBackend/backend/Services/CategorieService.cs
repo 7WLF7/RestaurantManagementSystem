@@ -1,9 +1,10 @@
 ﻿using backend.Interfaces;
 using backend.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Services
 {
-    public class CategorieService
+    public class CategorieService : ICategorieRepository
     {
         private readonly ICategorieRepository _categorieRepository;
 
@@ -12,9 +13,14 @@ namespace backend.Services
             _categorieRepository = categorieRepository;
         }
 
-        public async Task<IEnumerable<Categorie>> GetCategoriiAsync()
+        public async Task AdaugaCategorie(Categorie categorie) => await _categorieRepository.AdaugaCategorie(categorie);
+
+        public Task<IActionResult> AfiseazaToateCategoriile()
         {
-            return await _categorieRepository.GetAllCategoriiAsync();
+            throw new NotImplementedException();
         }
+
+        public async Task<Categorie> GasesteCategorieDupaNume(string nume) => await _categorieRepository.GasesteCategorieDupaNume(nume);
+        public async Task<List<Categorie>> ObtineCategorii() => await _categorieRepository.ObtineCategorii();
     }
 }

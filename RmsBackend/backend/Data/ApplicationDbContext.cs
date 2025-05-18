@@ -11,11 +11,4 @@ namespace backend.Data
         public DbSet<Categorie> Categorii { get; set; }
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Produs>()
-            .HasOne(c => c.Categorie)
-            .withMany(p => p.Produse)
-            .HasForeignKey(c => c.CategorieId);
-    }
 }

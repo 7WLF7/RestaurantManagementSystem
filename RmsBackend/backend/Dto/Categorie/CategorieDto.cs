@@ -2,5 +2,6 @@
 {
     public class CategorieDto
     {
+        public string Nume { get; set; }
     }
 }

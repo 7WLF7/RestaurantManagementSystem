@@ -2,10 +2,9 @@
 {
     public class ProdusDto
     {
-        public int Categorie { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Status { get; set; }
-
+        public string Nume { get; set; }
+        public string Descriere { get; set; }
+        public decimal Pret { get; set; }
+        public int CantitateStoc { get; set; }
     }
 }

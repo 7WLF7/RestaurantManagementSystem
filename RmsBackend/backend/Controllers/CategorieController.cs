@@ -1,4 +1,6 @@
-﻿using backend.Services;
+﻿using backend.Dto.Categorie;
+using backend.Models;
+using backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
@@ -12,10 +14,21 @@ public class CategorieController : ControllerBase
         _categorieService = categorieService;
     }
 
-    [HttpGet]
-    public async Task<IActionResult> GetCategorii()
+    [HttpPost("adauga-categorie")]
+    public async Task<IActionResult> AdaugaCategorie([FromBody] CategorieDto categorieDto)
     {
-        var categorii = await _categorieService.GetCategoriiAsync();
+        var categorieNoua = new Categorie
+        {
+            Nume = categorieDto.Nume
+        };
+
+        await _categorieService.AdaugaCategorie(categorieNoua);
+        return Ok(categorieNoua);
+    }
+    [HttpGet("categorii-complet")]
+    public async Task<IActionResult> AfiseazaToateCategoriile()
+    {
+        var categorii = await _categorieService.ObtineCategorii();
         return Ok(categorii);
     }
 }
