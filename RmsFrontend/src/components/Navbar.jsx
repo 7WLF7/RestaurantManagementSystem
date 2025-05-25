@@ -10,12 +10,19 @@ const Navbar = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Home Link */}
-          <div className="text-lg font-semibold text-black hover:text-orange-500">
-            <Link to="/homepage">Meniu</Link>
+          <div className="hidden md:flex space-x-6">
+            <Link to="/homepage" className="text-black hover:text-orange-500">Home
+            </Link>
+            <Link to="/menu" className="text-black hover:text-orange-500">
+              Menu
+            </Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6">
+            <Link to="/basket" className="text-black hover:text-orange-500">
+              Basket
+            </Link>
             <Link to="/login" className="text-black hover:text-orange-500">
               Login
             </Link>

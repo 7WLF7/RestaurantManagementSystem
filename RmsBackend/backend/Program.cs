@@ -52,7 +52,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp", policy =>
     {
         policy
-            .WithOrigins("http://localhost:3000") // Adresa frontend-ului React
+            .WithOrigins("http://localhost:5173") // Adresa frontend-ului React
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials(); // Dacă folosești cookie-uri/autentificare cu credentials

@@ -32,7 +32,7 @@ const Register = () => {
     }),
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       try {
-        const response = await fetch("https://localhost:5001/api/Auth/register", {
+        const response = await fetch("https://localhost:5000/api/Auth/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

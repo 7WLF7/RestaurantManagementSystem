@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
+
 
 const Homepage = () => {
   return (
@@ -24,7 +26,9 @@ const Homepage = () => {
       <section className="hero" id="home">
         <h1>Discover the Taste of Elegance</h1>
         <p>Enjoy our exquisite dishes made with passion and the finest ingredients.</p>
-        <button className="btn-hero">Discover More</button>
+        <Link to="/menu" className="btn-hero">
+            View Menu
+        </Link>
 
         <div className="hero-images">
           <img src="/images/bruschete.jpg" alt="Bruschette" />
