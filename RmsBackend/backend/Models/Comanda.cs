@@ -3,17 +3,30 @@
     public class Comanda
     {
         public int Id { get; set; }
-        public int UtilizatorId { get; set; }
+        public int? UtilizatorId { get; set; }
         public User Utilizator { get; set; }
-        public DateTime Data { get; set; }
-        public string Status { get; set; } 
-        public List<ComandaProdus> Produse { get; set; }
+        public DateTime DataPlasare { get; set; } = DateTime.Now;
+        public Status Status { get; set; } = Status.InAsteptare;
+        public List<ComandaProdus> ProduseComanda { get; set; }
+        public decimal Total { get; set; }
+        public string? MetodaPlata { get; set; }
+        public int? TimpEstimativMinute { get; set; }
     }
     public class ComandaProdus
     {
-        public int Id { get; set; }
-        public int ComandaId { get; set; }
         public int ProdusId { get; set; }
+        public Produs Produs { get; set; }
+
+        public int ComandaId { get; set; }
+        public Comanda Comanda { get; set; }
+
         public int Cantitate { get; set; }
+    }
+
+    public enum Status
+    {
+        InAsteptare,
+        InPreparare,
+        Servita
     }
 }

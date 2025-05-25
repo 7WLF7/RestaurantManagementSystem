@@ -11,6 +11,7 @@ namespace backend.Mappers
             {
                 Name = produsModel.Nume,
                 Description = produsModel.Descriere,
+                CantitateStoc = produsModel.CantitateStoc
             };
         }
         public static Produs ToProdusFromCreateDto(this CreateProdusRequestDto produsDto)
@@ -19,6 +20,7 @@ namespace backend.Mappers
             {
                 Nume = produsDto.Name,
                 Descriere=produsDto.Description,
+                CantitateStoc=produsDto.CantitateStoc
 
             };
         }

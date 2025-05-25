@@ -9,5 +9,7 @@ namespace backend.Dto.Produs
         public string Description { get; set; }
         public string Status { get; set; }
 
+        public int CantitateStoc { get; set; }
+
     }
 }

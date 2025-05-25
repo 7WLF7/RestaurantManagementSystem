@@ -28,7 +28,8 @@ namespace backend.Services
                 Nume = dto.CategorieNume,
                 Descriere = dto.Description,
                 Pret = dto.Pret,
-                CategorieId = categorie.Id
+                CategorieId = categorie.Id,
+                CantitateStoc=dto.CantitateStoc
             };
 
             _context.Produse.Add( produs );

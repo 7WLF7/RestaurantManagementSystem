@@ -106,5 +106,15 @@
                 return Unauthorized(ex.Message);
             }
         }
+        [Authorize]
+        [HttpGet("api/me")]
+        public IActionResult GetCurrentUser()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            var role = User.FindFirstValue(ClaimTypes.Role);
+
+            return Ok(new { UserId = userId, Email = email, Role = role });
+        }
     }
 }
