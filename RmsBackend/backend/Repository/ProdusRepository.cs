@@ -16,5 +16,24 @@ namespace backend.Repository
         {
             return _context.Produse.ToListAsync();
         }
+
+        public async Task<List<Produs>> GetProduseByCategorieAsync(string categorieNume)
+        {
+            var categorie = await _context.Categorii
+            .FirstOrDefaultAsync(c => c.Nume.ToLower() == categorieNume.ToLower());
+
+            if (categorie == null)
+                return new List<Produs>();
+
+            return await _context.Produse
+                .Include(p => p.Categorie)
+                .Where(p => p.CategorieId == categorie.Id)
+                .ToListAsync();
+        }
+
+        Task<IEnumerable<Produs>> IProdusRepository.GetAllProdusAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

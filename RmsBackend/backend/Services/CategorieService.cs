@@ -1,20 +1,47 @@
-﻿using backend.Interfaces;
+﻿using backend.Dto.Categorie;
+using backend.Interfaces;
 using backend.Models;
+using backend.Repository;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
 
 namespace backend.Services
 {
-    public class CategorieService
+    public class CategorieService : ICategorieService
     {
-        private readonly ICategorieRepository _categorieRepository;
+        private readonly ICategorieRepository _repository;
 
         public CategorieService(ICategorieRepository categorieRepository)
         {
-            _categorieRepository = categorieRepository;
+            _repository= categorieRepository;
         }
 
-        public async Task<IEnumerable<Categorie>> GetCategoriiAsync()
+        public async Task<CategorieDto> AddCategoryAsync(CreateCategorieDto dto)
         {
-            return await _categorieRepository.GetAllCategoriiAsync();
+            if(await _repository.ExistsByNameAsync(dto.nume))
+            {
+                throw new Exception("Categoria deja exista!");
+            }
+
+            var categorie = new Categorie { Nume= dto.nume };
+            var added = await _repository.AddAsync(categorie);
+
+            return new CategorieDto
+            {
+                Id = added.Id,
+                Nume = dto.nume
+            };
+        }
+
+        public async Task<List<CategorieDto>> GetAllCategoriesAsync()
+        {
+            var categorii = await _repository.GetAllAsync();
+
+            return categorii.Select(c =>  new CategorieDto 
+            {
+                Id = c.Id,
+                Nume=c.Nume
+            }).ToList();
         }
     }
 }

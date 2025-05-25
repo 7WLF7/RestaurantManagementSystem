@@ -2,9 +2,11 @@
 {
     public class CreateProdusRequestDto
     {
-        public int Categorie { get; set; }
+        public String CategorieNume { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
+
+        public decimal Pret { get; set; }
     }
 }

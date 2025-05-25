@@ -12,10 +12,13 @@ namespace backend.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IProdusRepository _produsRepo;
-        public ProdusController(ApplicationDbContext context, IProdusRepository produsRepo)
+        private readonly IProdusService _produsService;
+        public String _numeCategorie { get; set; }
+        public ProdusController(ApplicationDbContext context, IProdusRepository produsRepo, IProdusService produsService)
         {
             _context = context;
             _produsRepo = produsRepo;
+            _produsService = produsService;
         }
 
         [HttpGet("get")]
@@ -28,12 +31,26 @@ namespace backend.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Create([FromBody] CreateProdusRequestDto produsDto)
+        public async Task<IActionResult> Create([FromBody] CreateProdusRequestDto produsDto)
         {
-            var produsModel = produsDto.ToProdusFromCreateDto();
-            _context.Produse.Add(produsModel);
-            _context.SaveChanges();
-            return Ok();  
+            try
+            {
+                await _produsService.AddProdusAsync(produsDto);
+                return Ok("Produs adaugat cu succes!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("ProduseDupaCategorie/{_numeCategorie}")]
+        public async Task<IActionResult> GetProduseByCategorie(String _numeCategorie)
+        {
+            var produse = await _produsRepo.GetProduseByCategorieAsync(_numeCategorie);
+            var produsDto = produse.Select(p => p.ToProdusDto()).ToList();
+
+            return Ok(produsDto);
         }
     }
 }

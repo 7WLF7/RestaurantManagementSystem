@@ -4,6 +4,7 @@ namespace backend.Interfaces
 {
     public interface IProdusRepository
     {
-        Task<List<Produs>> GetAllProdusAsync();
+        Task<IEnumerable<Produs>> GetAllProdusAsync();
+        Task<List<Produs>> GetProduseByCategorieAsync(string categorieNume);
     }
 }
