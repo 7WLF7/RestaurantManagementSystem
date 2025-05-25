@@ -90,3 +90,103 @@ function ListaComenzi() {
     </div>
   );
 }
+
+
+
+import { useEffect, useState } from 'react';
+
+function PlaseazaComanda() {
+  const [produse, setProduse] = useState([]);
+  const [comanda, setComanda] = useState({});
+  const [total, setTotal] = useState(0);
+  const token = localStorage.getItem('token');
+
+  // Obține lista de produse
+  useEffect(() => {
+    fetch('https://localhost:5001/api/produse')
+      .then(res => res.json())
+      .then(setProduse)
+      .catch(err => console.error("Eroare la produse:", err));
+  }, []);
+
+  // Recalculează totalul când se schimbă cantitățile
+  useEffect(() => {
+    let totalActual = 0;
+    for (const id in comanda) {
+      const produs = produse.find(p => p.id === parseInt(id));
+      if (produs) {
+        totalActual += produs.pret * comanda[id];
+      }
+    }
+    setTotal(totalActual);
+  }, [comanda, produse]);
+
+  const handleCantitateChange = (produsId, cantitate) => {
+    setComanda(prev => ({
+      ...prev,
+      [produsId]: cantitate
+    }));
+  };
+
+  const trimiteComanda = async () => {
+    const produseTrimise = Object.entries(comanda)
+      .filter(([_, cant]) => cant > 0)
+      .map(([id, cant]) => ({
+        produsId: parseInt(id),
+        cantitate: cant
+      }));
+
+    const res = await fetch('https://localhost:5001/api/comenzi/plaseaza', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      body: JSON.stringify({ produse: produseTrimise })
+    });
+
+    if (res.ok) {
+      alert("Comanda trimisă cu succes!");
+      setComanda({});
+    } else {
+      const text = await res.text();
+      alert("Eroare: " + text);
+    }
+  };
+
+  return (
+    <div>
+      <h2>Plasează Comandă</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produs</th>
+            <th>Preț</th>
+            <th>Cantitate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {produse.map(p => (
+            <tr key={p.id}>
+              <td>{p.nume}</td>
+              <td>{p.pret} lei</td>
+              <td>
+                <input
+                  type="number"
+                  min="0"
+                  max={p.stoc}
+                  value={comanda[p.id] || 0}
+                  onChange={e => handleCantitateChange(p.id, parseInt(e.target.value) || 0)}
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p><strong>Total:</strong> {total.toFixed(2)} lei</p>
+      <button onClick={trimiteComanda}>Trimite Comanda</button>
+    </div>
+  );
+}
+
+export default PlaseazaComanda;
