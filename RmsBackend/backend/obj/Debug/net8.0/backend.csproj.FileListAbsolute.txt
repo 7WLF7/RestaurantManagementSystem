@@ -143,3 +143,5 @@ C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0
 C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\backend.pdb
 C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\ref\backend.dll
+C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\ProiecteVS\RMS\RestaurantManagementSystem\RmsBackend\backend\bin\Debug\net8.0\BCrypt.Net-Next.dll
