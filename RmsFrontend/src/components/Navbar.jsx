@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Home Link */}
           <div className="text-lg font-semibold text-black hover:text-orange-500">
-            <Link to="/menuPage">Meniu</Link>
+            <Link to="/homepage">Meniu</Link>
           </div>
 
           {/* Desktop Links */}
@@ -37,7 +37,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-100 shadow">
           <div className="flex flex-col px-4 pt-2 pb-4 space-y-2">
-            <Link to="/home" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/homepage" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/login" onClick={() => setIsOpen(false)}>Login</Link>
             <Link to="/register" onClick={() => setIsOpen(false)}>Register</Link>
           </div>
