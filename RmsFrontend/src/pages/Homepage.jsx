@@ -1,8 +1,10 @@
 import React from 'react';
+import '../App.css';
 
 const Homepage = () => {
   return (
     <>
+        <div className="min-h-screen min-w-screen">
       {/* Navbar fără logo */}
       <nav className="navbar">
         <ul className="nav-links">
@@ -37,6 +39,7 @@ const Homepage = () => {
           <a href="#contact" style={{color: '#d4af37'}}>Contact</a>
         </p>
       </footer>
+      </div>
     </>
   );
 };
