@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 var jwtSecret = "SuperSecretKeyForJWT_IncaCevaAiciCaSaFieMaiLunga";
@@ -85,7 +86,7 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
         ClockSkew = TimeSpan.Zero,
-        RoleClaimType = "role" // Asigură-te că e exact ca în token
+        RoleClaimType = ClaimTypes.Role // Asigură-te că e exact ca în token
     };
 });
 
