@@ -52,6 +52,7 @@ namespace backend.Controllers
             var produsDto = produse.Select(p => new ProdusNumeDto
             {
                 Nume = p.Nume,
+                Id=p.Id,
                 Descriere = p.Descriere
             }).ToList();
 

@@ -4,5 +4,7 @@
     {
         public string Nume { get; set; }
         public string Descriere { get; set; }
+
+        public int Id { get; set; }
     }
 }
