@@ -32,7 +32,7 @@ namespace backend.Services
                 CantitateStoc=dto.CantitateStoc
             };
 
-            _context.Produse.Add( produs );
+            _context.Produse.Add(produs);
             await _context.SaveChangesAsync();
         }
     }

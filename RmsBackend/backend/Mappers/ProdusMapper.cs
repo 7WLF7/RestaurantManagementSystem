@@ -21,7 +21,6 @@ namespace backend.Mappers
                 Nume = produsDto.Name,
                 Descriere=produsDto.Description,
                 CantitateStoc=produsDto.CantitateStoc
-
             };
         }
     }
