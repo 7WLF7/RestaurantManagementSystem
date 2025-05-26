@@ -45,13 +45,14 @@ namespace backend.Controllers
             }
         }
 
-        [HttpGet("ProduseDupaCategorie/{_numeCategorie}")]
-        public async Task<IActionResult> GetProduseByCategorie(String _numeCategorie)
+        [HttpGet("ProduseDupaCategorie/{numeCategorie}")]
+        public async Task<IActionResult> GetProduseByCategorie(string numeCategorie)
         {
-            var produse = await _produsRepo.GetProduseByCategorieAsync(_numeCategorie);
+            var produse = await _produsRepo.GetProduseByCategorieAsync(numeCategorie);
             var produsDto = produse.Select(p => new ProdusNumeDto
             {
-                Nume = p.Nume
+                Nume = p.Nume,
+                Descriere = p.Descriere
             }).ToList();
 
             return Ok(produsDto);

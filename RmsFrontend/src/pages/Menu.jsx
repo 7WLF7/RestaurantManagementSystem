@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 function Menu() {
@@ -6,54 +7,54 @@ function Menu() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [basket, setBasket] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
         // 1️⃣ Fetch categorii
         const categoryRes = await fetch('http://localhost:5049/api/Categorie');
-        if (!categoryRes.ok) throw new Error('Eroare la încărcarea categoriilor');
+        if (!categoryRes.ok) {
+          throw new Error('Eroare la încărcarea categoriilor');
+        }
         const categories = await categoryRes.json();
-        
-        // 2️⃣ Normalizează numele categoriilor
+
+        // 2️⃣ Normalizează și pregătește numele categoriilor
         const validCategories = categories
           .filter(cat => cat?.nume?.trim())
           .map(cat => ({
-            originalName: cat.nume,
+            originalName: cat.nume.trim(),
             encodedName: encodeURIComponent(cat.nume.trim().toLowerCase())
           }));
 
         // 3️⃣ Fetch produse pentru fiecare categorie
         const categoryPromises = validCategories.map(async ({ originalName, encodedName }) => {
           try {
-            const res = await fetch(`http://localhost:5049/api/Categorie/ProduseDupaCategorie/${encodedName}`);
-            
+            const url =
+              'http://localhost:5049/api/produse/ProduseDupaCategorie/' + encodedName;
+            const res = await fetch(url);
+
             if (!res.ok) {
-              console.warn(`[${encodedName}] Răspuns API:`, res.status);
-              return { category: originalName, products: ["Nicio opțiune momentan"] };
+              console.warn('[' + encodedName + '] Răspuns API:', res.status);
+              return { category: originalName, products: [] };
             }
 
             const products = await res.json();
-            console.log("Date primite de la API:", data);
-            console.log(`[${encodedName}] Produse primite:`, products);
-
-            return { category: originalName, products: products.length > 0 ? products : ["Nicio opțiune momentan"] };
+            return { category: originalName, products };
           } catch (err) {
-            console.error(`[${encodedName}] Eroare:`, err);
-            return { category: originalName, products: ["Nicio opțiune momentan"] };
+            console.error('[' + encodedName + '] Eroare:', err);
+            return { category: originalName, products: [] };
           }
         });
 
-        // 4️⃣ Procesează rezultatele și construiește structura meniului
+        // 4️⃣ Construiește structura finală a meniului
         const results = await Promise.all(categoryPromises);
-        const menuStructure = results.reduce((acc, curr) => {
-          acc[curr.category] = curr.products;
+        const menuStructure = results.reduce((acc, { category, products }) => {
+          acc[category] = products || [];
           return acc;
         }, {});
 
-        console.log('Structura finală:', menuStructure);
         setMenuData(menuStructure);
-
       } catch (err) {
         setError(err.message);
       } finally {
@@ -65,90 +66,103 @@ function Menu() {
   }, []);
 
   const addToBasket = (item) => {
-    setBasket(prevBasket => [...prevBasket, item]);
+    setBasket(prev => [...prev, item]);
   };
 
   const navigateToBasket = () => {
-    console.log('Current basket:', basket);
-    // Aici poți adăuga navigarea către pagina de coș
+    navigate('/basket');
   };
 
   if (isLoading) {
-    return <div className="min-h-screen min-w-screen flex items-center justify-center">Loading menu...</div>;
+    return (
+      <div className="min-h-screen min-w-screen flex items-center justify-center">
+        Se încarcă meniul...
+      </div>
+    );
   }
 
   if (error) {
-    return <div className="min-h-screen min-w-screen flex items-center justify-center text-red-500">Error: {error}</div>;
+    return (
+      <div className="min-h-screen min-w-screen flex items-center justify-center text-red-500">
+        Eroare: {error}
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen min-w-screen">
+    <div className="min-h-screen min-w-screen bg-gray-50 text-black">
       {/* Navbar */}
-      <nav className="navbar">
-        <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
+      <nav className="navbar bg-white shadow-md p-4 flex justify-between items-center">
+        <ul className="flex gap-6">
+          <li><a href="/">Acasă</a></li>
+          <li><a href="#about">Despre</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li>
-            <button 
-              className="btn-highlight"
-              onClick={navigateToBasket}
-            >
-              Coș ({basket.length})
-            </button>
-          </li>
         </ul>
+        <button 
+          className="btn-highlight bg-yellow-500 px-4 py-2 rounded-md"
+          onClick={navigateToBasket}
+        >
+          Coș ({basket.length})
+        </button>
       </nav>
 
       {/* Logo */}
-      <div className="logo-center">
-        <img src="/images/logo.png" alt="NOVA Logo" className="logo-big" />
+      <div className="logo-center text-center my-6">
+        <img src="/images/logo.png" alt="NOVA Logo" className="mx-auto h-24" />
       </div>
 
       {/* Hero Section */}
-      <section className="hero">
-        <h1 className="menu-title">Meniul nostru</h1>
-        <p>Descoperă preparatele noastre rafinate, create cu pasiune și ingrediente de calitate.</p>
+      <section className="text-center mb-8">
+        <h1 className="text-3xl font-bold">Meniul nostru</h1>
+        <p className="text-gray-600 mt-2">
+          Descoperă preparatele noastre rafinate, create cu pasiune și ingrediente de calitate.
+        </p>
       </section>
 
       {/* Menu Items by Category */}
-      <div className="menu-categories hero-images">
+      <div className="menu-categories px-6 md:px-20">
         {Object.entries(menuData).map(([categoryName, products]) => (
-          <div className="menu-category" key={categoryName}>
-            <h2>{categoryName}</h2>
-            <ul>
-              {products.map((product, index) => (
-                <li key={`${categoryName}-${index}`}>
-                  {typeof product === "string" ? (
-                    <p className="text-gray-500 italic">{product}</p>
-                  ) : (
-                    <div className="product-item">
-                      <h3>{product.nume}</h3>
-                      <p>{product.descriere}</p>
-                      <div className="product-details">
-                        <span>Stoc: {product.cantitateStoc}</span>
-                        <button
-                          onClick={() => addToBasket(product)}
-                          className="add-to-basket-btn"
-                        >
-                          Adaugă în coș
-                        </button>
+          <div className="menu-category mb-10" key={categoryName}>
+            <h2 className="text-xl font-semibold mb-3 border-b border-gray-300 pb-1">
+              {categoryName}
+            </h2>
+            <ul className="space-y-4">
+              {products.length > 0 ? (
+                products.map((product, index) => (
+                  <li
+                    key={categoryName + '-' + index}
+                    className="bg-white p-4 rounded-md shadow-sm"
+                  >
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <h3 className="text-lg font-medium">{product.nume}</h3>
+                        <p className="text-sm text-gray-600">{product.descriere}</p>
                       </div>
+                      <button
+                        onClick={() => addToBasket(product)}
+                        className="ml-4 bg-black text-white px-3 py-2 rounded-md hover:bg-gray-800"
+                      >
+                        Adaugă în coș
+                      </button>
                     </div>
-                  )}
-                </li>
-              ))}
+                  </li>
+                ))
+              ) : (
+                <p className="text-gray-400 italic">
+                  Niciun produs disponibil în această categorie.
+                </p>
+              )}
             </ul>
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer text-center py-6 bg-white border-t mt-10">
         <p>© 2025 NOVA Restaurant. Toate drepturile rezervate.</p>
-        <p>
-          <a href="#about" style={{ color: '#d4af37', marginRight: '15px' }}>Despre noi</a>
-          <a href="#contact" style={{ color: '#d4af37' }}>Contact</a>
+        <p className="mt-2">
+          <a href="#about" className="text-yellow-600 mr-4">Despre noi</a>
+          <a href="#contact" className="text-yellow-600">Contact</a>
         </p>
       </footer>
     </div>
