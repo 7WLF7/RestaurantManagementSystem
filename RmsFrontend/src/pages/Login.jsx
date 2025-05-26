@@ -24,7 +24,7 @@ const Login = () => {
     }),
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       try {
-        const response = await fetch("https://localhost:5001/api/Auth/login", {
+        const response = await fetch("https://localhost:5000/api/Auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const Login = () => {
           token: data.token // If using JWT or similar
         });
         
-        navigate("/home"); // Redirect to your protected page
+        navigate("/homepage"); // Redirect to your protected page
         
       } catch (error) {
         setStatus(error.message || "A apărut o eroare. Vă rugăm să încercați din nou.");
