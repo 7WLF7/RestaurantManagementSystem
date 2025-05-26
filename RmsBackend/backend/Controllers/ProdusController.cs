@@ -2,6 +2,7 @@
 using backend.Dto.Produs;
 using backend.Interfaces;
 using backend.Mappers;
+using backend.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Controllers
@@ -48,7 +49,10 @@ namespace backend.Controllers
         public async Task<IActionResult> GetProduseByCategorie(String _numeCategorie)
         {
             var produse = await _produsRepo.GetProduseByCategorieAsync(_numeCategorie);
-            var produsDto = produse.Select(p => p.ToProdusDto()).ToList();
+            var produsDto = produse.Select(p => new ProdusNumeDto
+            {
+                Nume = p.Nume
+            }).ToList();
 
             return Ok(produsDto);
         }
