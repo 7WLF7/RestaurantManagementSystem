@@ -25,7 +25,7 @@ namespace backend.Services
 
             var produs = new Produs
             {
-                Nume = dto.CategorieNume,
+                Nume = dto.Name,
                 Descriere = dto.Description,
                 Pret = dto.Pret,
                 CategorieId = categorie.Id,

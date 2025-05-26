@@ -83,6 +83,7 @@ namespace backend.Services
             {
                 Email = dto.Email,
                 ParolaHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                Nume = dto.Username,
                 Rol = Rol.Angajat
             };
             _context.Users.Add(user);

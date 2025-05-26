@@ -1,74 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\",
+  "WorkspaceRootPath": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\CategorieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\CategorieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\ProdusController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Dto\\Auth\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Dto\\Auth\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\ProdusMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Mappers\\ProdusMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ProdusService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\ProdusService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\ItemComandaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Dto\\Comanda\\ItemComandaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\Comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ComandaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\ComandaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ComandaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\ComandaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IComandaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Interfaces\\IComandaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\CreeazaComandaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Dto\\Comanda\\CreeazaComandaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,214 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 314,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\RegisterRequestDto.cs",
-              "RelativeDocumentMoniker": "backend\\Dto\\Auth\\RegisterRequestDto.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\RegisterRequestDto.cs",
-              "RelativeToolTip": "backend\\Dto\\Auth\\RegisterRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:02:26.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "backend\\Dto\\Auth\\LoginRequestDto.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Auth\\LoginRequestDto.cs",
-              "RelativeToolTip": "backend\\Dto\\Auth\\LoginRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:02:24.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProdusMapper.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\ProdusMapper.cs",
-              "RelativeDocumentMoniker": "backend\\Mappers\\ProdusMapper.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\ProdusMapper.cs",
-              "RelativeToolTip": "backend\\Mappers\\ProdusMapper.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T22:16:12.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProdusService.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ProdusService.cs",
-              "RelativeDocumentMoniker": "backend\\Services\\ProdusService.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ProdusService.cs",
-              "RelativeToolTip": "backend\\Services\\ProdusService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T22:09:01.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ItemComandaDto.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\ItemComandaDto.cs",
-              "RelativeDocumentMoniker": "backend\\Dto\\Comanda\\ItemComandaDto.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\ItemComandaDto.cs",
-              "RelativeToolTip": "backend\\Dto\\Comanda\\ItemComandaDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:48:22.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Comanda.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Comanda.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Comanda.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Comanda.cs",
-              "RelativeToolTip": "backend\\Models\\Comanda.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T19:51:51.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "backend\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\UserService.cs",
-              "RelativeToolTip": "backend\\Services\\UserService.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAAwDAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:29:13.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:28:50.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwFoAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\UserService.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\UserService.cs",
+              "RelativeToolTip": "backend\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:26:30.926Z",
+              "WhenOpened": "2025-05-26T03:03:55.298Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategorieController.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\CategorieController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\CategorieController.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\CategorieController.cs",
-              "RelativeToolTip": "backend\\Controllers\\CategorieController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:31:38.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\User.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\User.cs",
-              "RelativeToolTip": "backend\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:02:34.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProdusController.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\ProdusController.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
-              "RelativeToolTip": "backend\\Controllers\\ProdusController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:02:52.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ComandaController.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ComandaController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\ComandaController.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ComandaController.cs",
-              "RelativeToolTip": "backend\\Controllers\\ComandaController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:44:38.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAcAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:26:57.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ComandaService.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ComandaService.cs",
-              "RelativeDocumentMoniker": "backend\\Services\\ComandaService.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ComandaService.cs",
-              "RelativeToolTip": "backend\\Services\\ComandaService.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAkwE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:15:21.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IComandaService.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IComandaService.cs",
-              "RelativeDocumentMoniker": "backend\\Interfaces\\IComandaService.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IComandaService.cs",
-              "RelativeToolTip": "backend\\Interfaces\\IComandaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:12:22.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreeazaComandaDto.cs",
-              "DocumentMoniker": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\CreeazaComandaDto.cs",
-              "RelativeDocumentMoniker": "backend\\Dto\\Comanda\\CreeazaComandaDto.cs",
-              "ToolTip": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Comanda\\CreeazaComandaDto.cs",
-              "RelativeToolTip": "backend\\Dto\\Comanda\\CreeazaComandaDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:10:16.777Z"
             }
           ]
         }

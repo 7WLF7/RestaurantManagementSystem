@@ -32,13 +32,13 @@ const Register = () => {
     }),
     onSubmit: async (values, { setSubmitting, setStatus }) => {
       try {
-        const response = await fetch("https://localhost:5000/api/Auth/register", {
+        const response = await fetch("http://localhost:5049/api/Auth/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            name: values.name,
+            username: values.name,
             email: values.email,
             password: values.password,
           }),
@@ -51,7 +51,7 @@ const Register = () => {
         }
 
         login(data.user); // You may need to update `data.user` based on what your backend returns
-        navigate("/home");
+        navigate("/homepage");
       } catch (error) {
         setStatus(error.message);
         console.error("Registration error:", error);
