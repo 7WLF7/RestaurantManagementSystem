@@ -10,7 +10,7 @@ export default function EmployeeDashboard() {
   // Fetch all products
   useEffect(() => {
     fetch('http://localhost:5049/api/produse/get', {
-      headers: { Authorization: `Bearer ${token}` }
+      headers: { Authorization: 'Bearer ${token}' }
     })
       .then(r => r.json())
       .then(setProducts);
@@ -21,21 +21,21 @@ export default function EmployeeDashboard() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`
+        Authorization: 'Bearer ${token}'
       },
       body: JSON.stringify(newProd)
     });
     // refetch
     setNewProd({ name: '', description: '', cantitateStoc: 0 });
-    const r = await fetch('http://localhost:5049/api/produse/get', { headers:{ Authorization:`Bearer ${token}` } });
+    const r = await fetch('http://localhost:5049/api/produse/get', { headers:{ Authorization:'Bearer ${token}' } });
     setProducts(await r.json());
   };
 
   const updateStock = async (id, amount) => {
     // you’ll need a backend PUT endpoint like /api/produse/{id}/stock
-    await fetch(`http://localhost:5049/api/produse/${id}/stock?quantity=${amount}`, {
+    await fetch('http://localhost:5049/api/produse/${id}/stock?quantity=${amount}', {
       method: 'PUT',
-      headers: { Authorization: `Bearer ${token}` }
+      headers: { Authorization: 'Bearer ${token}' }
     });
     setProducts(ps =>
       ps.map(p => (p.id === id ? { ...p, cantitateStoc: amount } : p))
