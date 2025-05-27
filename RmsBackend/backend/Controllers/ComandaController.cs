@@ -47,6 +47,18 @@ namespace backend.Controllers
             return Ok(comenzi);
         }
 
+        [HttpGet("toatenefinalizate")]
+        [Authorize(Roles = "Angajat,Admin")]
+        public async Task<IActionResult> GetComenziNefinalizate()
+        {
+            var comenzi = await _comandaService.GetComenziPentruAngajatiAsync();
+
+            // Filtrăm comenzile care NU au statusul "Servita"
+            var comenziFiltrate = comenzi.Where(c => c.Status != Status.Servita).ToList();
+
+            return Ok(comenziFiltrate);
+        }
+
         [HttpPut("{id}/status")]
         [Authorize(Roles = "Angajat,Admin")]
         public async Task<IActionResult> ActualizeazaStatus(int id, [FromQuery] Status status)

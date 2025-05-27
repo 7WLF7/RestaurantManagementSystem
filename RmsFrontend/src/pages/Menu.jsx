@@ -65,26 +65,36 @@ function Menu() {
 
   // Trimite comanda spre backend și actualizează contorul de coș
   const addToBasket = async function(product) {
-    try {
-      var res = await fetch('http://localhost:5049/api/Comanda', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + token
-        },
-        body: JSON.stringify({ produsId: product.id, cantitate: 1 })
-      });
-      if (!res.ok) {
-        var message = await res.text();
-        throw new Error(message || 'Eroare la plasarea comenzii');
-      }
-      // Dacă totul e ok, incrementează numărul din butonul coș
-      setBasketCount(function(count) { return count + 1; });
-    } catch (err) {
-      console.error('addToBasket error:', err);
-      alert('Nu am putut adăuga produsul în coș: ' + err.message);
+  try {
+    const dto = {
+      produse: [
+        {
+          produsId: product.id,
+          cantitate: 1
+        }
+      ]
+    };
+
+    const res = await fetch('http://localhost:5049/api/Comanda', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
+      body: JSON.stringify(dto)
+    });
+
+    if (!res.ok) {
+      const message = await res.text();
+      throw new Error(message || 'Eroare la plasarea comenzii');
     }
-  };
+
+    setBasketCount(prev => prev + 1);
+  } catch (err) {
+    console.error('addToBasket error:', err);
+    alert('Nu am putut adăuga produsul în coș: ' + err.message);
+  }
+};
 
   const navigateToBasket = function() {
     navigate('/basket');
