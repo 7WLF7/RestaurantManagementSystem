@@ -27,14 +27,11 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className='hidden md:flex items-center space-x-6'>
-            <Link to='/homepage' className='text-black hover:text-orange-500'>
-              Home
-            </Link>
             <Link to='/menu' className='text-black hover:text-orange-500'>
               Menu
             </Link>
-            <Link to='/basket' className='text-black hover:text-orange-500'>
-              Basket
+            <Link to='/cart' className='text-black hover:text-orange-500'>
+              Cart
             </Link>
             {currentUser ? (
               <>
@@ -80,13 +77,10 @@ export default function Navbar() {
       {isOpen && (
         <div className='md:hidden bg-gray-100 shadow'>
           <div className='flex flex-col px-4 pt-2 pb-4 space-y-2'>
-            <Link to='/homepage' onClick={() => setIsOpen(false)}>
-              Home
-            </Link>
             <Link to='/menu' onClick={() => setIsOpen(false)}>
               Menu
             </Link>
-            <Link to='/basket' onClick={() => setIsOpen(false)}>
+            <Link to='/cart' onClick={() => setIsOpen(false)}>
               Basket
             </Link>
             {currentUser ? (

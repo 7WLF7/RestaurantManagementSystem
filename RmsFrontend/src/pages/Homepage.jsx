@@ -36,11 +36,11 @@ const Homepage = () => {
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© 2025 NOVA Restaurant. All rights reserved.</p>
-        <p>
-          <a href="#about" style={{color: '#d4af37', marginRight: '15px'}}>About</a>
-          <a href="#contact" style={{color: '#d4af37'}}>Contact</a>
+      <footer className='footer text-center py-6 bg-white border-t mt-10'>
+        <p>© 2025 NOVA Restaurant. Toate drepturile rezervate.</p>
+        <p className='mt-2'>
+          <a href='#about' className='text-yellow-600 mr-4'>Despre noi</a>
+          <a href='#contact' className='text-yellow-600'>Contact</a>
         </p>
       </footer>
       </div>
