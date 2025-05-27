@@ -441,3 +441,4 @@ C:\ProiecteVS\RMS2\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.
 C:\ProiecteVS\RMS2\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\backend.pdb
 C:\ProiecteVS\RMS2\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\ProiecteVS\RMS2\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\frati\fisiereGIT\RestaurantManagementSystem\RmsBackend\backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

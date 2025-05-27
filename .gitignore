@@ -1,0 +1,80 @@
+# ========================
+# Fișiere Visual Studio
+# ========================
+.vs/
+*.user
+*.suo
+*.cache
+*.dbmdl
+*.pdb
+*.obj
+*.log
+*.tlog
+*.aps
+*.ncb
+*.ilk
+*.bak
+*.exp
+*.idb
+*.opendb
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.sln.docstates
+
+# ========================
+# Fișiere Visual Studio Code
+# ========================
+.vscode/
+
+# ========================
+# Foldere și fișiere de build
+# ========================
+bin/
+obj/
+out/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# ========================
+# Migrații Entity Framework
+# ========================
+**/Migrations/
+# Dacă ai un folder personalizat pentru migrații, adaugă-l aici
+# ex: MyApp/Data/Migrations/
+
+# ========================
+# Fișiere temporare și de backup
+# ========================
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*.swn
+*.~*
+
+# ========================
+# Fisiere de log
+# ========================
+*.log
+
+# ========================
+# Alte fișiere de sistem
+# ========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ========================
+# Fisiere de la testare
+# ========================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
