@@ -53,6 +53,7 @@ namespace backend.Controllers
             {
                 Nume = p.Nume,
                 Id=p.Id,
+                Pret=p.Pret,
                 Descriere = p.Descriere
             }).ToList();
 

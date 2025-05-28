@@ -6,5 +6,7 @@
         public string Descriere { get; set; }
 
         public int Id { get; set; }
+
+        public decimal Pret { get; set; }
     }
 }
