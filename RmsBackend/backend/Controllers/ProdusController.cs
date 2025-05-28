@@ -64,5 +64,22 @@ namespace backend.Controllers
             return Ok(rezultat);
         }
 
+<<<<<<< Updated upstream
+=======
+        [HttpGet("ProduseDupaCategorie/{numeCategorie}")]
+        public async Task<IActionResult> GetProduseByCategorie(string numeCategorie)
+        {
+            var produse = await _produsRepo.GetProduseByCategorieAsync(numeCategorie);
+            var produsDto = produse.Select(p => new ProdusNumeDto
+            {
+                Nume = p.Nume,
+                Id=p.Id,
+                Descriere = p.Descriere,
+                Pret = p.Pret
+            }).ToList();
+
+            return Ok(produsDto);
+        }
+>>>>>>> Stashed changes
     }
 }

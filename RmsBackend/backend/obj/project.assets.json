@@ -4423,23 +4423,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\frati\\.nuget\\packages\\": {},
+    "C:\\Users\\Andy_LCT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\frati\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\frati\\fisiereGIT\\RestaurantManagementSystem\\RmsBackend\\backend\\obj\\",
+      "projectPath": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\Andy_LCT\\.nuget\\packages\\",
+      "outputPath": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\frati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andy_LCT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4448,7 +4448,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4466,8 +4465,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4513,8 +4511,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

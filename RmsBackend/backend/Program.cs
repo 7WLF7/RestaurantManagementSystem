@@ -19,6 +19,32 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IProdusRepository, ProdusRepository>();
 builder.Services.AddScoped<ICategorieRepository, CategorieRepository>();
 builder.Services.AddScoped<CategorieService>();
+<<<<<<< Updated upstream
+=======
+builder.Services.AddScoped<IProdusService, ProdusService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IComandaService, ComandaService>();
+services.AddScoped<IComandaService, ComandaService>();
+services.AddScoped<IComandaRepository, ComandaRepository>();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
+        ClockSkew = TimeSpan.Zero,
+        RoleClaimType = ClaimTypes.Role // Asigură-te că e exact ca în token
+    };
+});
+>>>>>>> Stashed changes
 
 var app = builder.Build();
 
