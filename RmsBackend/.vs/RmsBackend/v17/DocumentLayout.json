@@ -1,10 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\",
+  "WorkspaceRootPath": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms\\restaurantmanagementsystem\\rmsbackend\\backend\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms2\\restaurantmanagementsystem\\rmsbackend\\backend\\interfaces\\icomandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\interfaces\\icomandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|c:\\proiectevs\\rms2\\restaurantmanagementsystem\\rmsbackend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\dto\\produs\\createprodusrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\dto\\produs\\createprodusrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\dto\\produs\\produsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\dto\\produs\\produsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\models\\produs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\produs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\repository\\produsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\repository\\produsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\services\\categorieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\services\\categorieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\mappers\\categoriemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\mappers\\categoriemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\interfaces\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\interfaces\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\controllers\\categoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\categoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\controllers\\produscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\controllers\\produscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\services\\produsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\services\\produsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\mappers\\produsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\mappers\\produsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\repository\\comandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\repository\\comandarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\models\\comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067C10EF-AA86-4609-B292-4D84A13B9E74}|backend\\backend.csproj|solutionrelative:backend\\models\\comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,21 +109,312 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 314,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Categorie.cs",
-              "DocumentMoniker": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Categorie.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Categorie.cs",
-              "ToolTip": "C:\\ProiecteVS\\RMS\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Categorie.cs",
-              "RelativeToolTip": "backend\\Models\\Categorie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Title": "IComandaRepository.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IComandaRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Interfaces\\IComandaRepository.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IComandaRepository.cs",
+              "RelativeToolTip": "backend\\Interfaces\\IComandaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:19:04.55Z",
+              "WhenOpened": "2025-05-28T22:27:45.344Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T14:26:33.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "backend.http",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.http",
+              "RelativeDocumentMoniker": "backend\\backend.http",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\backend.http",
+              "RelativeToolTip": "backend\\backend.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-27T15:26:58.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Program.cs*",
+              "RelativeToolTip": "backend\\Program.cs*",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEoAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:40:53.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComandaController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ComandaController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ComandaController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ComandaController.cs*",
+              "RelativeToolTip": "backend\\Controllers\\ComandaController.cs*",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:09:03.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAAoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:11:40.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateProdusRequestDto.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Produs\\CreateProdusRequestDto.cs",
+              "RelativeDocumentMoniker": "backend\\Dto\\Produs\\CreateProdusRequestDto.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Produs\\CreateProdusRequestDto.cs",
+              "RelativeToolTip": "backend\\Dto\\Produs\\CreateProdusRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:52:25.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produs.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Produs.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Produs.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Produs.cs",
+              "RelativeToolTip": "backend\\Models\\Produs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:10:56.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Feedback.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Feedback.cs",
+              "RelativeToolTip": "backend\\Models\\Feedback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:10:40.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProdusRepository.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\ProdusRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Repository\\ProdusRepository.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\ProdusRepository.cs",
+              "RelativeToolTip": "backend\\Repository\\ProdusRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:09:03.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "backend\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:10:22.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProdusDto.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Produs\\ProdusDto.cs",
+              "RelativeDocumentMoniker": "backend\\Dto\\Produs\\ProdusDto.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Dto\\Produs\\ProdusDto.cs",
+              "RelativeToolTip": "backend\\Dto\\Produs\\ProdusDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T22:10:51.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs*",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwFcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:16:45.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategorieMapper.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\CategorieMapper.cs",
+              "RelativeDocumentMoniker": "backend\\Mappers\\CategorieMapper.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\CategorieMapper.cs",
+              "RelativeToolTip": "backend\\Mappers\\CategorieMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T14:59:08.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\User.cs",
+              "RelativeToolTip": "backend\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:35:07.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Categorie.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Categorie.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Categorie.cs",
+              "RelativeToolTip": "backend\\Models\\Categorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:16:03.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "backend\\Controllers\\FeedbackController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T14:58:53.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategorieService.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\CategorieService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\CategorieService.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\CategorieService.cs",
+              "RelativeToolTip": "backend\\Services\\CategorieService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwB4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T13:59:01.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IFeedbackRepository.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Interfaces\\IFeedbackRepository.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Interfaces\\IFeedbackRepository.cs",
+              "RelativeToolTip": "backend\\Interfaces\\IFeedbackRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T14:59:04.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProdusMapper.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\ProdusMapper.cs",
+              "RelativeDocumentMoniker": "backend\\Mappers\\ProdusMapper.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Mappers\\ProdusMapper.cs",
+              "RelativeToolTip": "backend\\Mappers\\ProdusMapper.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:51:21.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Comanda.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Comanda.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Comanda.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Models\\Comanda.cs",
+              "RelativeToolTip": "backend\\Models\\Comanda.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:09:23.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ComandaRepository.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\ComandaRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Repository\\ComandaRepository.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Repository\\ComandaRepository.cs",
+              "RelativeToolTip": "backend\\Repository\\ComandaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:08:58.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProdusController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ProdusController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\ProdusController.cs",
+              "RelativeToolTip": "backend\\Controllers\\ProdusController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwDgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:27:07.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategorieController.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\CategorieController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\CategorieController.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Controllers\\CategorieController.cs",
+              "RelativeToolTip": "backend\\Controllers\\CategorieController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:27:00.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProdusService.cs",
+              "DocumentMoniker": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ProdusService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\ProdusService.cs",
+              "ToolTip": "C:\\ProiecteVS\\RMS2\\RestaurantManagementSystem\\RmsBackend\\backend\\Services\\ProdusService.cs",
+              "RelativeToolTip": "backend\\Services\\ProdusService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:26:50.12Z"
             }
           ]
         }

@@ -821,7 +821,11 @@
           }
         }
       },
+<<<<<<< Updated upstream
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
+=======
+      "System.IdentityModel.Tokens.Jwt/7.1.2": {
+>>>>>>> Stashed changes
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
           "Microsoft.IdentityModel.Tokens": "6.35.0"
