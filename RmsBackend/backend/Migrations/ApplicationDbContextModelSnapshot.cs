@@ -74,20 +74,28 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Models.ComandaProdus", b =>
                 {
-                    b.Property<int>("ProdusId")
+                    b.Property<int>("ComandaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ComandaId")
+                    b.Property<int>("ProdusId")
                         .HasColumnType("int");
 
                     b.Property<int>("Cantitate")
                         .HasColumnType("int");
 
-                    b.HasKey("ProdusId", "ComandaId");
+                    b.Property<int?>("ComandaProdusComandaId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("ComandaId");
+                    b.Property<int?>("ComandaProdusProdusId")
+                        .HasColumnType("int");
 
-                    b.ToTable("ProduseComanda");
+                    b.HasKey("ComandaId", "ProdusId");
+
+                    b.HasIndex("ProdusId");
+
+                    b.HasIndex("ComandaProdusComandaId", "ComandaProdusProdusId");
+
+                    b.ToTable("ComenziProduse");
                 });
 
             modelBuilder.Entity("backend.Models.Produs", b =>
@@ -173,6 +181,10 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("backend.Models.ComandaProdus", null)
+                        .WithMany("ProduseComandate")
+                        .HasForeignKey("ComandaProdusComandaId", "ComandaProdusProdusId");
+
                     b.Navigation("Comanda");
 
                     b.Navigation("Produs");
@@ -197,6 +209,11 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Models.Comanda", b =>
                 {
                     b.Navigation("ProduseComanda");
+                });
+
+            modelBuilder.Entity("backend.Models.ComandaProdus", b =>
+                {
+                    b.Navigation("ProduseComandate");
                 });
 #pragma warning restore 612, 618
         }

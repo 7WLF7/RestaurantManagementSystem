@@ -21,6 +21,8 @@
         public Comanda Comanda { get; set; }
 
         public int Cantitate { get; set; }
+
+        public List<ComandaProdus> ProduseComandate { get; set; }
     }
 
     public enum Status

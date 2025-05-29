@@ -23,7 +23,7 @@ namespace backend.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> PlaseazaComanda([FromBody] CreeazaComandaDto dto)
+        public async Task<IActionResult> PlaseazaComanda([FromBody] PlaseazaComandaDto dto)
         {
             int? utilizatorId = null;
             var userIdClaim=User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -52,11 +52,7 @@ namespace backend.Controllers
         public async Task<IActionResult> GetComenziNefinalizate()
         {
             var comenzi = await _comandaService.GetComenziPentruAngajatiAsync();
-
-            // Filtrăm comenzile care NU au statusul "Servita"
-            var comenziFiltrate = comenzi.Where(c => c.Status != Status.Servita).ToList();
-
-            return Ok(comenziFiltrate);
+            return Ok(comenzi);
         }
 
         [HttpPut("{id}/status")]

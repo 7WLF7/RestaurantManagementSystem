@@ -29,48 +29,27 @@ namespace backend.Services
         public async Task<List<Comanda>> GetComenziPentruAngajatiAsync()
         {
             return await _context.Comenzi
-                .Include(c=> c.Utilizator)
-                .Include(c=> c.ProduseComanda).ThenInclude(pc=> pc.Produs)
+                .Where(c => c.Status != Status.Servita)
+                .Include(c => c.Utilizator)
+                .Include( c=> c.ProduseComanda)
+                .ThenInclude(pc => pc.Produs)
                 .ToListAsync();
         }
 
-        public async Task PlaseazaComandaAsync(int? utilizatorId, CreeazaComandaDto dto)
+        public async Task PlaseazaComandaAsync(int? utilizatorId, PlaseazaComandaDto dto)
         {
-            if (dto.Produse == null || !dto.Produse.Any())
-                throw new Exception("Comanda trebuie să conțină cel puțin un produs.");
-
             var comanda = new Comanda
             {
                 UtilizatorId = utilizatorId,
-                ProduseComanda = new List<ComandaProdus>()
-            };
-
-            decimal total = 0;
-
-            foreach (var item in dto.Produse)
-            {
-                if (item.Cantitate <= 0)
-                    throw new Exception("Cantitatea trebuie să fie mai mare decât 0.");
-
-                var produs = await _context.Produse.FindAsync(item.ProdusId);
-                if (produs == null)
-                    throw new Exception($"Produsul cu ID {item.ProdusId} nu a fost găsit.");
-
-                if (produs.CantitateStoc < item.Cantitate)
-                    throw new Exception($"Produsul {produs.Nume} nu are stoc suficient.");
-
-                produs.CantitateStoc -= item.Cantitate;
-
-                total += item.Cantitate * produs.Pret;
-
-                comanda.ProduseComanda.Add(new ComandaProdus
+                DataPlasare = DateTime.Now,
+                Status = Status.InAsteptare,
+                Total = dto.Total,
+                ProduseComanda = dto.Produse.Select(p => new ComandaProdus
                 {
-                    ProdusId = produs.Id,
-                    Cantitate = item.Cantitate
-                });
-            }
-
-            comanda.Total = total;
+                    ProdusId = p.ProdusId,
+                    Cantitate = p.Cantitate
+                }).ToList(),
+            };
 
             _context.Comenzi.Add(comanda);
             await _context.SaveChangesAsync();

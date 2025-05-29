@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using System.Security.Claims;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 var jwtSecret = "SuperSecretKeyForJWT_IncaCevaAiciCaSaFieMaiLunga";
@@ -71,6 +72,10 @@ builder.Services.AddScoped<CategorieService>();
 builder.Services.AddScoped<IProdusService, ProdusService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IComandaService, ComandaService>();
+builder.Services.AddControllers().AddJsonOptions(x =>
+{
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 builder.Services.AddAuthentication(options =>
 {
