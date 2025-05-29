@@ -9,5 +9,7 @@ namespace backend.Interfaces
         Task<List<Comanda>> GetComenziPentruAngajatiAsync();
         Task ActualizeazaStatusulAsync(int comandaId, Status status);
         Task SeteazaTimpEstimativAsync(int comandaId, int minute);
+
+        Task SeteazaMetodaPlataAsync(int comandaId, MetodaPlata metodaPlata);
     }
 }

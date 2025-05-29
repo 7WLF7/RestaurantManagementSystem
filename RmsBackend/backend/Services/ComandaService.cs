@@ -55,6 +55,17 @@ namespace backend.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task SeteazaMetodaPlataAsync(int comandaId, MetodaPlata metodaPlata)
+        {
+            var comanda = await _context.Comenzi.FindAsync(comandaId);
+            if(comanda == null)
+            {
+                throw new Exception("Comanda nu a fost gasita!");
+            }
+            comanda.MetodaPlata = metodaPlata.ToString();
+            await _context.SaveChangesAsync();
+        }
+
         public async Task SeteazaTimpEstimativAsync(int comandaId, int minute)
         {
             var comanda = await _context.Comenzi.FindAsync(comandaId);
@@ -64,5 +75,7 @@ namespace backend.Services
             comanda.TimpEstimativMinute = minute;
             await _context.SaveChangesAsync();
         }
+
+        
     }
 }

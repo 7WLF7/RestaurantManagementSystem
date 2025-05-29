@@ -31,4 +31,9 @@
         InPreparare,
         Servita
     }
+    public enum MetodaPlata
+    {
+        Cash,
+        Card
+    }
 }

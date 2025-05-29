@@ -71,5 +71,20 @@ namespace backend.Controllers
             return Ok("Timp estimativ setat!");
         }
 
+        [HttpPut("{id}/metodaplata")]
+        [Authorize(Roles = "Angajat,Admin")]
+        
+        public async Task<IActionResult> SeteazaMetodaPlata(int id, [FromQuery] SeteazaMetodaPlataDto dto)
+        {
+            try
+            {
+                await _comandaService.SeteazaMetodaPlataAsync(id, dto.metodaPlata);
+                return Ok("Metoda de plata a fost modificata!");
+            }
+            catch(Exception ex) 
+            {
+                return NotFound();
+            }
+        }
     }
 }
