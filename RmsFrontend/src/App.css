@@ -1,0 +1,265 @@
+/* Reset și bază */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    /* Ensure body and html take full height if you want to control overall scrolling */
+    min-height: 100vh; /* Make sure body itself covers full viewport height */
+    width: 100%;
+}
+
+html {
+    height: 100%; /* Important for vh units to work correctly on body */
+}
+
+
+.btn-highlight {
+  background-color: #d4af37;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #0f0f0f;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-highlight:hover {
+  background-color: #ffcc00;
+}
+
+/* Logo centrat mare */
+.logo-center {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 10px;
+}
+
+.logo-big {
+  height: 140px;
+  max-width: 90%;
+  filter: drop-shadow(0 0 15px #d4af37);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Hero Section cu fundal */
+.hero {
+  /* Position absolute to cover the entire viewport behind other content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Take full viewport width */
+  height: 100vh; /* Take full viewport height for the background */
+  background: url('/public/images/fundal-home.jpg') center center / cover no-repeat;
+  color: #f0e6c8;
+  padding: 0 20px; /* Reset padding for content positioning */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content horizontally */
+  z-index: 1; /* Keep it below other elements like navbar, logo */
+  overflow: hidden; /* Prevent background image from causing scrollbars if it extends slightly */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(15, 15, 15, 0.7); /* overlay întunecat peste imagine */
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #d4af37;
+    margin-top: 130px; /* Adjust this to move the title down from the very top */
+    margin-bottom: 20px;
+    z-index: 2; /* Ensure text is above overlay */
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    z-index: 2; /* Ensure text is above overlay */
+}
+
+/* Butoane hero grupate */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px; /* Keep this margin for spacing below buttons */
+    z-index: 2; /* Ensure buttons are above overlay */
+}
+
+.btn-hero, .btn-hero-secondary {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Buton principal */
+.btn-hero {
+  background-color: #d4af37;
+  color: #0f0f0f;
+  margin-top: 300px
+}
+
+.btn-hero:hover {
+  background-color: #ffcc00;
+}
+
+/* Buton secundar */
+.btn-hero-secondary {
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+}
+
+.btn-hero-secondary:hover {
+  background-color: #d4af37;
+  color: #0f0f0f;
+}
+
+/* Imagini rotunde hero */
+/* Hero Images Container */
+.hero-images {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    /* Adjust 'bottom' to move images up or down relative to the hero section's bottom */
+    bottom: 180px; /* Example: Move images closer to the bottom of the viewport */
+    /* Remove margin-top as it's now absolutely positioned correctly */
+    /* margin-top: -60px; */
+    z-index: 2; /* Ensure images are above overlay */
+    width: 100%; /* To make left/right 10% actually work out of 100% of hero width */
+    max-width: 1100px; /* Example: to control max spread */
+    margin: 0 auto; /* Center the absolutely positioned container if you define a max-width */
+}
+
+/* Individual Images */
+.hero-images img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d4af37;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-images img:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 20px #d4af37;
+}
+
+/* Footer */
+
+
+/* Meniu Container */
+.menu-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.7); /* auriu */
+  color: #f0e6c8;
+  font-family: 'Georgia', serif;
+}
+
+/* Titlu meniu */
+.menu-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #d4af37;
+  text-shadow: 0 0 8px #d4af37;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Categorii meniu */
+.menu-category h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  transition: color 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+}
+
+.menu-category h2:hover {
+  color: #fff3b0; /* galben pal */
+  border-color: #fff3b0;
+}
+
+/* Listă items meniu */
+.menu-category ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+.menu-category li {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  padding: 6px 0 6px 10px;
+  border-left: 4px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  color: #f0e6c8;
+}
+
+.menu-category li:hover {
+  border-left: 4px solid #d4af37;
+  color: #fff3b0;
+  font-weight: 600;
+}
+
+/* Imagini pentru categorii */
+.menu-category img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #d4af37;
+  box-shadow: 0 0 15px #d4af37;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.menu-category img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ffcc00;
+}
+
+/* Container pentru gruparea imaginilor */
+.menu-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
